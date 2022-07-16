@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--MongolRoyale/-->
+	<DataObject Name="MongolRoyale" Type="Mod" Id="9126521722645364385" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">14380978489304310402</DataValue>
+			<!--MongolRoyale/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="14380978489304310402" OwnerId="9126521722645364385">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="2832295095"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="1843450578"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="1955126986"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1332940812"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">16292275732518493734</DataValue>
+			<!--MongolRoyale/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="16292275732518493734" OwnerId="9126521722645364385">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="2832295095"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="1843450578"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="1955126986"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1332940812"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+
