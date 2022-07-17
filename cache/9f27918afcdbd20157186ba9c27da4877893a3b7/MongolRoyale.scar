@@ -79,14 +79,7 @@ _mod = {
 		pos = World_Pos(0, 0, 0),
 		radius = 200,
 		kill_radius = 200
-	},
-	objective = {
-		Title = "Move into the circle",
-		Type = ObjectiveType_Optional, 
-	},
-	sub_objective = {},
-	round_num = 0,
-	circle_shrink_time_s = 60
+	}
 }
 
 -- Register the win condition (Some functions can be prepended with "Mod_" to be called automatically as part of the scripting framework)
@@ -147,6 +140,7 @@ end
 -- Called on match initialization before handing control to the player
 function Mod_OnInit()
 	Rule_AddOneShot(Mod_SpawnCircle, 5)
+	Rule_AddInterval(Mod_SpawnCircle, 300)
 end
 
 -- Called after initialization is done when game is fading up from black
@@ -173,8 +167,13 @@ end
 
 -- This function creates the objective UI that appears in the top-left corner of each player's screen
 function Mod_SetupObjective()
-	Objective_Register(_mod.objective)
-	Objective_Start(_mod.objective, true, false)
+	circle_obj = {
+		Title = "Move into the circle",
+		Type = ObjectiveType_Optional, 
+	}
+	Objective_Register(circle_obj)
+	Objective_StartTimer(circle_obj, -1, 60)
+	Objective_Start(circle_obj, true, false)
 end
 
 
@@ -197,27 +196,18 @@ function Mod_SpawnCircle()
 		local x = Get_X_Of_Circle_On_World(angle, _mod.circle.radius)
 		local z = Get_Z_Of_Circle_On_World(angle, _mod.circle.radius)
 		
-		HintPoint_Add(World_Pos(x, 0, z), true, Loc_Empty(), 10, HPAT_Critical, nil, nil, true)
+		HintPoint_Add(World_Pos(x, 0, z), true, "Circle", 10, HPAT_Critical, nil, nil, true)
 	end
 	
 	_mod.circle.kill_radius = _mod.circle.radius
 	_mod.circle.radius = _mod.circle.radius * 0.75
-	_mod.round_num = _mod.round_num + 1 
 	
-	_mod.sub_objective = {
-		Title = string.format("Round %d", _mod.round_num),
-		Type = ObjectiveType_Optional,
-		Parent = _mod.objective,
-	}
-	Objective_Register(_mod.sub_objective)
-	Objective_StartTimer(_mod.sub_objective, COUNT_DOWN, _mod.circle_shrink_time_s)
-	Objective_Start(_mod.sub_objective, true, false)
-	
-	Rule_AddOneShot(Mod_KillEntitiesOutsideOfCircle, _mod.circle_shrink_time_s)
+	UI_CreateEventCueClickable(-1, 60.0, 0, 20.0, "Move into the circle, you have 2 minutesss", Loc_Empty(), "event_with_player_color", "", "", 255, 255, 255, 255, ECV_Queue, nothing)
+	Rule_AddOneShot(Mod_KillEntitiesOutsideOfCircle, 120)
 end
 
 function Mod_KillEntitiesOutsideOfCircle()
-	Objective_Complete(_mod.sub_objective)
+	UI_CreateEventCueClickable(-1, 60.0, 0, 20.0, "The circle kills...", Loc_Empty(), "event_with_player_color", "", "", 255, 255, 255, 255, ECV_Queue, nothing)
 	for i, player in pairs(PLAYERS) do
 		player_entgroupobs = Player_GetAllEntities(player.id)
 		local has_alive_units = false
@@ -231,7 +221,6 @@ function Mod_KillEntitiesOutsideOfCircle()
 	end
 	
 	Rule_AddOneShot(Mod_CheckForPlayersWhoShouldBeDead, 5)
-	Rule_AddOneShot(Mod_SpawnCircle, 10)
 end
 
 function Mod_CheckForPlayersWhoShouldBeDead()
@@ -240,7 +229,6 @@ function Mod_CheckForPlayersWhoShouldBeDead()
 		local has_alive_units = false
 		
 		for i=1,EGroup_Count(player_entgroupobs),1 do
-			local entity = EGroup_GetEntityAt(player_entgroupobs, i)
 			has_alive_units = has_alive_units or (Entity_GetHealth(entity) > 0) 
 		end
 		

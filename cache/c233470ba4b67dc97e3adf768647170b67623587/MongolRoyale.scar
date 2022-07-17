@@ -85,7 +85,7 @@ _mod = {
 		Type = ObjectiveType_Optional, 
 	},
 	sub_objective = {},
-	round_num = 0,
+	round_num = 1,
 	circle_shrink_time_s = 60
 }
 
@@ -197,12 +197,11 @@ function Mod_SpawnCircle()
 		local x = Get_X_Of_Circle_On_World(angle, _mod.circle.radius)
 		local z = Get_Z_Of_Circle_On_World(angle, _mod.circle.radius)
 		
-		HintPoint_Add(World_Pos(x, 0, z), true, Loc_Empty(), 10, HPAT_Critical, nil, nil, true)
+		HintPoint_Add(World_Pos(x, 0, z), true, "Circle", 10, HPAT_Critical, nil, nil, true)
 	end
 	
 	_mod.circle.kill_radius = _mod.circle.radius
 	_mod.circle.radius = _mod.circle.radius * 0.75
-	_mod.round_num = _mod.round_num + 1 
 	
 	_mod.sub_objective = {
 		Title = string.format("Round %d", _mod.round_num),

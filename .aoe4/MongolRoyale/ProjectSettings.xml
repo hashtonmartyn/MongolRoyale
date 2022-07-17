@@ -12,6 +12,7 @@
 						<d2p1:string>assets\scar\winconditions</d2p1:string>
 						<d2p1:string>assets\scar\MongolRoyale.scar</d2p1:string>
 						<d2p1:string>assets\scar\MongolRoyale.scar.bak</d2p1:string>
+						<d2p1:string>assets\mod.png</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
@@ -24,11 +25,16 @@
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\MongolRoyale.rdo</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.rdo</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\locdb\MongolRoyale.locdb</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale_bak.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.png</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\hun_chp3_orleans_metadata.override</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\hun_chp3_orleans.scenario</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\hun_chp3_orleans.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\hun_chp3_orleans.prefabdata</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\obj_destroy_rouen.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\obj_uni_capture.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\sobj_capture_mine.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\mon_chp1_kalka_river.scar</d3p1:string>
 		</History>
 	</RecentFiles>
 </ProjectSettings>

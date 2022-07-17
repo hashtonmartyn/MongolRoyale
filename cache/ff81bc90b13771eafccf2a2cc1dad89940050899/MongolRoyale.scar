@@ -84,8 +84,6 @@ _mod = {
 		Title = "Move into the circle",
 		Type = ObjectiveType_Optional, 
 	},
-	sub_objective = {},
-	round_num = 0,
 	circle_shrink_time_s = 60
 }
 
@@ -173,8 +171,7 @@ end
 
 -- This function creates the objective UI that appears in the top-left corner of each player's screen
 function Mod_SetupObjective()
-	Objective_Register(_mod.objective)
-	Objective_Start(_mod.objective, true, false)
+	
 end
 
 
@@ -197,27 +194,21 @@ function Mod_SpawnCircle()
 		local x = Get_X_Of_Circle_On_World(angle, _mod.circle.radius)
 		local z = Get_Z_Of_Circle_On_World(angle, _mod.circle.radius)
 		
-		HintPoint_Add(World_Pos(x, 0, z), true, Loc_Empty(), 10, HPAT_Critical, nil, nil, true)
+		HintPoint_Add(World_Pos(x, 0, z), true, "Circle", 10, HPAT_Critical, nil, nil, true)
 	end
 	
 	_mod.circle.kill_radius = _mod.circle.radius
 	_mod.circle.radius = _mod.circle.radius * 0.75
-	_mod.round_num = _mod.round_num + 1 
 	
-	_mod.sub_objective = {
-		Title = string.format("Round %d", _mod.round_num),
-		Type = ObjectiveType_Optional,
-		Parent = _mod.objective,
-	}
-	Objective_Register(_mod.sub_objective)
-	Objective_StartTimer(_mod.sub_objective, COUNT_DOWN, _mod.circle_shrink_time_s)
-	Objective_Start(_mod.sub_objective, true, false)
+	Objective_Register(_mod.objective)
+	Objective_StartTimer(_mod.objective, COUNT_DOWN, _mod.circle_shrink_time_s)
+	Objective_Start(_mod.objective, true, false)
 	
 	Rule_AddOneShot(Mod_KillEntitiesOutsideOfCircle, _mod.circle_shrink_time_s)
 end
 
 function Mod_KillEntitiesOutsideOfCircle()
-	Objective_Complete(_mod.sub_objective)
+	Objective_Complete(_mod.objective)
 	for i, player in pairs(PLAYERS) do
 		player_entgroupobs = Player_GetAllEntities(player.id)
 		local has_alive_units = false
