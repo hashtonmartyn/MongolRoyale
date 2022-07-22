@@ -3,29 +3,36 @@
   <RootPanel Orientation="Horizontal">
     <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="239" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
       <LayoutAnchorablePane DockHeight="200" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/18/2022 05:37:01" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/23/2022 02:45:56" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
       </LayoutAnchorablePane>
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPaneGroup Orientation="Horizontal">
-        <LayoutDocumentPane DockWidth="1.24522292993631*">
-          <LayoutDocument Title="MongolRoyale.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\MongolRoyale.scar" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar" LastActivationTimeStamp="07/18/2022 05:37:06" />
-          <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x7EA7EB270129BEA1" LastActivationTimeStamp="07/17/2022 06:07:49" />
-          <LayoutDocument Title="MongolRoyale.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x49A5B85C20B2395B" LastActivationTimeStamp="07/17/2022 12:53:22" />
+        <LayoutDocumentPane Id="1cfbee75-d001-4638-b82c-24bac04d8685" DockWidth="1.24522292993631*">
+          <LayoutDocument Title="MongolRoyale.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\MongolRoyale.scar" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar" LastActivationTimeStamp="07/23/2022 02:44:58" />
+          <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x7EA7EB270129BEA1" LastActivationTimeStamp="07/23/2022 02:41:42" />
+          <LayoutDocument Title="MongolRoyale.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x49A5B85C20B2395B" LastActivationTimeStamp="07/23/2022 02:42:20" />
           <LayoutDocument Title="ScenariosSP.sga" ContentId="FileName|Archive|C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" ToolTip="C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" LastActivationTimeStamp="07/17/2022 12:48:32" />
           <LayoutDocument Title="obj_destroy_rouen.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\obj_destroy_rouen.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\obj_destroy_rouen.scar" LastActivationTimeStamp="07/17/2022 12:47:06" />
+          <LayoutDocument Title="conquest.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\conquest.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\conquest.scar" LastActivationTimeStamp="07/20/2022 09:31:27" />
+          <LayoutDocument Title="_default.burnproj" ContentId="FileName|BurnProject|assets\_default.burnproj" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\_default.burnproj" LastActivationTimeStamp="07/22/2022 13:00:45" />
+          <LayoutDocument Title="mod.png" ContentId="FileName|Image|assets\mod.png" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.png" LastActivationTimeStamp="07/22/2022 13:31:09" />
         </LayoutDocumentPane>
         <LayoutDocumentPane>
-          <LayoutDocument Title="obj_optionals.scar" IsSelected="True" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" LastActivationTimeStamp="07/18/2022 05:31:46" />
+          <LayoutDocument Title="obj_optionals.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" LastActivationTimeStamp="07/20/2022 09:44:07" />
+          <LayoutDocument Title="Data.sga" IsSelected="True" ContentId="FileName|Archive|C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\Data.sga" ToolTip="C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\Data.sga" FloatingLeft="995" FloatingTop="73" FloatingWidth="1111" FloatingHeight="740" LastActivationTimeStamp="07/23/2022 02:26:18" PreviousContainerId="1cfbee75-d001-4638-b82c-24bac04d8685" PreviousContainerIndex="6" />
+          <LayoutDocument Title="elimination.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\elimination.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\elimination.scar" LastActivationTimeStamp="07/20/2022 09:47:12" />
+          <LayoutDocument Title="standard_mode.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\standard_mode.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\standard_mode.scar" LastActivationTimeStamp="07/20/2022 09:47:22" />
         </LayoutDocumentPane>
       </LayoutDocumentPaneGroup>
       <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="564">
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" ContentId="Output" LastActivationTimeStamp="07/17/2022 06:18:06" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" IsSelected="True" ContentId="ErrorList" LastActivationTimeStamp="07/18/2022 05:22:40" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" LastActivationTimeStamp="07/20/2022 12:27:50" />
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" LastActivationTimeStamp="07/17/2022 08:10:45" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Blueprint List" ContentId="ScenarioEditor.AssetBlueprint" LastActivationTimeStamp="07/17/2022 08:11:08" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Minimap" ContentId="ScenarioEditor.Minimap" LastActivationTimeStamp="07/17/2022 06:17:54" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find References Results 1" ContentId="FindReferencesResults1" LastActivationTimeStamp="07/17/2022 06:17:44" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Blueprint List" IsSelected="True" ContentId="ScenarioEditor.AssetBlueprint" LastActivationTimeStamp="07/22/2022 13:33:18" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Minimap" ContentId="ScenarioEditor.Minimap" LastActivationTimeStamp="07/20/2022 10:08:15" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Find References Results 1" ContentId="FindReferencesResults1" LastActivationTimeStamp="07/22/2022 13:26:41" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Type Browser" ContentId="ScenarioEditor.ReflectTypeBrowser" LastActivationTimeStamp="07/22/2022 13:30:17" />
       </LayoutAnchorablePane>
     </LayoutPanel>
     <LayoutAnchorablePaneGroup Orientation="Vertical" DockWidth="300" DockHeight="200">
@@ -46,10 +53,10 @@
   <BottomSide />
   <FloatingWindows />
   <Hidden>
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/17/2022 05:13:23" PreviousContainerId="8b8b5587-89b9-4e50-9ef4-c5d687d03144" PreviousContainerIndex="1" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="07/17/2022 05:13:23" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" ContentId="Globals" LastActivationTimeStamp="07/17/2022 05:38:55" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="7" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" ContentId="Locals" LastActivationTimeStamp="07/17/2022 05:38:55" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="7" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Call Stack" ContentId="CallStack" LastActivationTimeStamp="07/17/2022 05:38:55" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="5" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/23/2022 01:44:52" PreviousContainerId="8b8b5587-89b9-4e50-9ef4-c5d687d03144" PreviousContainerIndex="1" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="07/23/2022 01:44:52" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" IsSelected="True" ContentId="Globals" LastActivationTimeStamp="07/23/2022 01:44:52" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="7" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" IsSelected="True" ContentId="Locals" LastActivationTimeStamp="07/23/2022 01:44:52" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="7" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Call Stack" IsSelected="True" ContentId="CallStack" LastActivationTimeStamp="07/23/2022 01:44:52" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="5" />
   </Hidden>
 </LayoutRoot>
