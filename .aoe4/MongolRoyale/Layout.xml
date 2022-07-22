@@ -3,20 +3,21 @@
   <RootPanel Orientation="Horizontal">
     <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="239" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
       <LayoutAnchorablePane DockHeight="200" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/23/2022 02:45:56" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/23/2022 03:14:16" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
       </LayoutAnchorablePane>
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPaneGroup Orientation="Horizontal">
         <LayoutDocumentPane Id="1cfbee75-d001-4638-b82c-24bac04d8685" DockWidth="1.24522292993631*">
-          <LayoutDocument Title="MongolRoyale.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\MongolRoyale.scar" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar" LastActivationTimeStamp="07/23/2022 02:44:58" />
-          <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x7EA7EB270129BEA1" LastActivationTimeStamp="07/23/2022 02:41:42" />
-          <LayoutDocument Title="MongolRoyale.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x49A5B85C20B2395B" LastActivationTimeStamp="07/23/2022 02:42:20" />
+          <LayoutDocument Title="MongolRoyale.scar" ContentId="FileName|Script|assets\scar\MongolRoyale.scar" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar" LastActivationTimeStamp="07/23/2022 03:18:36" />
+          <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x7EA7EB270129BEA1" LastActivationTimeStamp="07/23/2022 02:50:59" />
+          <LayoutDocument Title="MongolRoyale.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x49A5B85C20B2395B" LastActivationTimeStamp="07/23/2022 03:14:13" />
           <LayoutDocument Title="ScenariosSP.sga" ContentId="FileName|Archive|C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" ToolTip="C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" LastActivationTimeStamp="07/17/2022 12:48:32" />
           <LayoutDocument Title="obj_destroy_rouen.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\obj_destroy_rouen.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\obj_destroy_rouen.scar" LastActivationTimeStamp="07/17/2022 12:47:06" />
           <LayoutDocument Title="conquest.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\conquest.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\conquest.scar" LastActivationTimeStamp="07/20/2022 09:31:27" />
           <LayoutDocument Title="_default.burnproj" ContentId="FileName|BurnProject|assets\_default.burnproj" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\_default.burnproj" LastActivationTimeStamp="07/22/2022 13:00:45" />
           <LayoutDocument Title="mod.png" ContentId="FileName|Image|assets\mod.png" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.png" LastActivationTimeStamp="07/22/2022 13:31:09" />
+          <LayoutDocument Title="MongolRoyale.locdb" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|LocDB|assets\locdb\MongolRoyale.locdb" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\locdb\MongolRoyale.locdb" LastActivationTimeStamp="07/23/2022 03:19:23" />
         </LayoutDocumentPane>
         <LayoutDocumentPane>
           <LayoutDocument Title="obj_optionals.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" LastActivationTimeStamp="07/20/2022 09:44:07" />

@@ -59,7 +59,7 @@ _mod = {
 		splat = {}
 	},
 	objective = {
-		Title = "Move into the circle",
+		Title = "$7488deca100c4f73b764d1a8d2d2e06d:14",
 		Type = ObjectiveType_Optional, 
 	},
 	sub_objective = {},
@@ -128,7 +128,7 @@ function Mod_SpawnCircle()
 	
 	_mod.round_num = _mod.round_num + 1 
 	_mod.sub_objective = {
-		Title = string.format("Round %d", _mod.round_num),
+		Title = Loc_FormatText("$7488deca100c4f73b764d1a8d2d2e06d:15", _mod.round_num),
 		Type = ObjectiveType_Optional,
 		Parent = _mod.objective,
 	}

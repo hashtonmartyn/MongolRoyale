@@ -11,6 +11,7 @@
 						<d2p1:string>assets\locdb</d2p1:string>
 						<d2p1:string>assets\scar\winconditions</d2p1:string>
 						<d2p1:string>assets\scar\MongolRoyale.scar</d2p1:string>
+						<d2p1:string>assets\scar\MongolRoyale.scar.bak</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
@@ -25,6 +26,7 @@
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\MongolRoyale.rdo</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\locdb\MongolRoyale.locdb</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.rdo</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.png</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\_default.burnproj</d3p1:string>
@@ -32,7 +34,6 @@
 			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\survey_of_empires.lua</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\pit.lua</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\map_template.lua</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\tacticalregions.lua</d3p1:string>
 		</History>
 	</RecentFiles>
 </ProjectSettings>
