@@ -19,11 +19,20 @@
 18,,,,,,Timer summary
 19,,,,,,Timer description
 20,,,,,,Circle Timer
-21,,,,,,circle timer summary
-22,,,,,,circle timer description
+21,,,,,,Countdown before the circle shrinks
+22,,,,,,Countdown before the circle shrinks
 23,,,,,,3 Minutes
 24,,,,,,4 Minutes
 25,,,,,,5 Minutes
 26,,,,,,6 Minutes
 27,,,,,,7 Minutes
 28,,,,,,1 Minute
+29,,,,,,Circle Timer Reduces
+30,,,,,,the circle countdown timer will be 60s shorter than the previous one but not shorter than one minute
+31,,,,,,"If enabled, the circle countdown timer will be 60s shorter than the previous one but not shorter than one minute"
+32,,,,,,Seven minute circle countdown timer
+33,,,,,,Three minute circle countdown timer
+34,,,,,,Four minute circle countdown timer
+35,,,,,,Five minute circle countdown timer
+36,,,,,,Six minute circle countdown timer
+37,,,,,,One minute circle countdown timer

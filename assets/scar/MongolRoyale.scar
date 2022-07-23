@@ -56,15 +56,16 @@ _mod = {
 	circle = {
 		pos = World_Pos(0, 0, 0),
 		radius = 200,
-		splat = {}
+		splat = {},
+		shrink_time = 300,
+		shrink_time_modifier = 0
 	},
 	objective = {
 		Title = "$7488deca100c4f73b764d1a8d2d2e06d:14",
 		Type = ObjectiveType_Optional, 
 	},
 	sub_objective = {},
-	round_num = 0,
-	circle_shrink_time_s = 300
+	round_num = 0
 }
 
 -- Register the win condition (Some functions can be prepended with "Mod_" to be called automatically as part of the scripting framework)
@@ -87,10 +88,8 @@ end
 
 -- Called on match initialization before handing control to the player
 function Mod_OnInit()
-	_mod.circle = {
-		pos = World_Pos(0, 0, 0),
-		radius = World_GetWidth() / 2
-	}
+	_mod.circle.pos = World_Pos(0, 0, 0)
+	_mod.circle.radius = World_GetWidth() / 2
 	
 	local circle_time_options = {
 		[_mod.options.circle.timer.enum_items.one_minute] = 60,
@@ -101,7 +100,11 @@ function Mod_OnInit()
 		[_mod.options.circle.timer.enum_items.seven_minutes] = 60 * 7,
 	}
 	
-	_mod.circle_shrink_time_s = circle_time_options[_mod.options.circle.timer.enum_value]
+	if _mod.options.circle.timer_reduces then
+		_mod.circle.shrink_time_modifier = -60
+	end
+	
+	_mod.circle.shrink_time = circle_time_options[_mod.options.circle.timer.enum_value]
 		
 	Rule_AddOneShot(Mod_SpawnCircle, 5)
 end
@@ -146,14 +149,14 @@ function Mod_SpawnCircle()
 	}
 	
 	Objective_Register(_mod.sub_objective)
-	Objective_StartTimer(_mod.sub_objective, COUNT_DOWN, _mod.circle_shrink_time_s)
+	Objective_StartTimer(_mod.sub_objective, COUNT_DOWN, _mod.circle.shrink_time)
 	Objective_Start(_mod.sub_objective, true, false)
 	Objective_AddAreaHighlight(_mod.sub_objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
 	
 	scale = _mod.circle.radius * 2.01
 	_mod.circle.splat = Splat_Create("tools\\cursor", _mod.circle.pos, scale, scale, 0, 0, 0, 255, 1000, true, true)
 	
-	Rule_AddOneShot(Mod_KillEntitiesOutsideOfCircle, _mod.circle_shrink_time_s)
+	Rule_AddOneShot(Mod_KillEntitiesOutsideOfCircle, _mod.circle.shrink_time)
 end
 
 function Mod_KillEntitiesOutsideOfCircle()
@@ -175,6 +178,11 @@ function Mod_KillEntitiesOutsideOfCircle()
 	local z_deviation = World_GetRand(circle_deviation * -1, circle_deviation)
 	_mod.circle.pos = World_Pos(_mod.circle.pos.x + x_deviation, 0, _mod.circle.pos.z + z_deviation)
 	_mod.circle.radius = _mod.circle.radius * 0.75
+	_mod.circle.shrink_time = _mod.circle.shrink_time + _mod.circle.shrink_time_modifier
+	
+	if _mod.circle.shrink_time < 60 then
+		_mod.circle.shrink_time = 60
+	end
 	
 	Rule_AddOneShot(Mod_SpawnCircle, 10)
 end

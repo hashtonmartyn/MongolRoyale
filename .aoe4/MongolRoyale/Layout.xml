@@ -3,20 +3,20 @@
   <RootPanel Orientation="Horizontal">
     <LayoutAnchorablePaneGroup Orientation="Horizontal" DockWidth="239" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
       <LayoutAnchorablePane DockHeight="200" FloatingWidth="300" FloatingHeight="800" FloatingLeft="200" FloatingTop="200">
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/24/2022 07:54:49" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Asset Explorer" IsSelected="True" ContentId="EssenceEditor.AssetExplorer" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/24/2022 08:51:35" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="1" />
       </LayoutAnchorablePane>
     </LayoutAnchorablePaneGroup>
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPaneGroup Orientation="Horizontal">
         <LayoutDocumentPane Id="1cfbee75-d001-4638-b82c-24bac04d8685" DockWidth="1.24522292993631*">
-          <LayoutDocument Title="MongolRoyale.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\MongolRoyale.scar" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar" LastActivationTimeStamp="07/24/2022 08:45:20" />
+          <LayoutDocument Title="MongolRoyale.scar" IsSelected="True" IsLastFocusedDocument="True" ContentId="FileName|Script|assets\scar\MongolRoyale.scar" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar" LastActivationTimeStamp="07/24/2022 09:38:41" />
           <LayoutDocument Title="mod.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x7EA7EB270129BEA1" LastActivationTimeStamp="07/24/2022 08:11:45" />
-          <LayoutDocument Title="MongolRoyale.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x49A5B85C20B2395B" LastActivationTimeStamp="07/24/2022 08:42:59" />
-          <LayoutDocument Title="ScenariosSP.sga" ContentId="FileName|Archive|C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" ToolTip="C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" LastActivationTimeStamp="07/17/2022 12:48:32" />
+          <LayoutDocument Title="MongolRoyale.rdo" ContentId="Reflect|Essence.Editor.ReflectEditor.Controls.DefaultReflectControlActivator|0x49A5B85C20B2395B" LastActivationTimeStamp="07/24/2022 09:05:23" />
+          <LayoutDocument Title="ScenariosSP.sga" ContentId="FileName|Archive|C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" ToolTip="C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ScenariosSP.sga" LastActivationTimeStamp="07/24/2022 08:57:40" />
           <LayoutDocument Title="obj_destroy_rouen.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\obj_destroy_rouen.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\obj_destroy_rouen.scar" LastActivationTimeStamp="07/17/2022 12:47:06" />
           <LayoutDocument Title="conquest.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\conquest.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\conquest.scar" LastActivationTimeStamp="07/20/2022 09:31:27" />
           <LayoutDocument Title="_default.burnproj" ContentId="FileName|BurnProject|assets\_default.burnproj" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\_default.burnproj" LastActivationTimeStamp="07/22/2022 13:00:45" />
-          <LayoutDocument Title="MongolRoyale.locdb" ContentId="FileName|LocDB|assets\locdb\MongolRoyale.locdb" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\locdb\MongolRoyale.locdb" LastActivationTimeStamp="07/23/2022 05:53:07" />
+          <LayoutDocument Title="MongolRoyale.locdb" ContentId="FileName|LocDB|assets\locdb\MongolRoyale.locdb" ToolTip="C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\locdb\MongolRoyale.locdb" LastActivationTimeStamp="07/24/2022 09:02:35" />
         </LayoutDocumentPane>
         <LayoutDocumentPane>
           <LayoutDocument Title="obj_optionals.scar" ContentId="FileName|Script|C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" ToolTip="C:\Users\hashtonmartyn\AppData\Local\Temp\obj_optionals.scar" LastActivationTimeStamp="07/20/2022 09:44:07" />
@@ -27,7 +27,7 @@
       </LayoutDocumentPaneGroup>
       <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="564">
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="07/24/2022 08:45:13" />
-        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" LastActivationTimeStamp="07/24/2022 08:29:57" />
+        <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Error List" ContentId="ErrorList" LastActivationTimeStamp="07/24/2022 08:57:32" />
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Object Browser" ContentId="ScenarioEditor.ObjectBrowser" LastActivationTimeStamp="07/24/2022 08:38:04" />
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Blueprint List" ContentId="ScenarioEditor.AssetBlueprint" LastActivationTimeStamp="07/24/2022 08:38:04" />
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Minimap" ContentId="ScenarioEditor.Minimap" LastActivationTimeStamp="07/24/2022 08:38:03" />
@@ -55,8 +55,8 @@
   <Hidden>
     <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Painter" IsSelected="True" ContentId="ScenarioEditor.Painter" FloatingLeft="200" FloatingTop="200" FloatingWidth="300" FloatingHeight="800" LastActivationTimeStamp="07/24/2022 07:53:19" PreviousContainerId="8b8b5587-89b9-4e50-9ef4-c5d687d03144" PreviousContainerIndex="1" />
     <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Transformation" IsSelected="True" ContentId="ScenarioEditor.Transformation" FloatingLeft="200" FloatingTop="200" FloatingWidth="250" FloatingHeight="300" LastActivationTimeStamp="07/24/2022 07:53:19" PreviousContainerId="78c06263-eb86-40c1-8abf-6d89a3781df0" PreviousContainerIndex="0" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" ContentId="Globals" LastActivationTimeStamp="07/24/2022 08:41:31" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="8" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" ContentId="Locals" LastActivationTimeStamp="07/24/2022 08:40:15" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="8" />
-    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Call Stack" ContentId="CallStack" LastActivationTimeStamp="07/24/2022 08:38:09" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="5" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Globals" ContentId="Globals" LastActivationTimeStamp="07/24/2022 09:37:41" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="8" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Locals" ContentId="Locals" LastActivationTimeStamp="07/24/2022 09:37:37" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="8" />
+    <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Call Stack" ContentId="CallStack" LastActivationTimeStamp="07/24/2022 09:35:15" PreviousContainerId="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" PreviousContainerIndex="5" />
   </Hidden>
 </LayoutRoot>
