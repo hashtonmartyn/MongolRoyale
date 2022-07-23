@@ -14,3 +14,16 @@
 13,,,,,,"Just like your favourite first-person-shooter battle royale, but in AOE4!\n\nUnits outside of the circle will die when the countdown hits zero. While the countdown is active you can exit the circle to gather resources, acquire relics, or capture sacred sites. Playing as the Mongols isn't required but it's definitely recommended."
 14,,,,,,Move into the circle
 15,,,,,,Round %1ROUNDNUM%
+16,,,,,,Circle Options
+17,,,,,,Timer display name
+18,,,,,,Timer summary
+19,,,,,,Timer description
+20,,,,,,Circle Timer
+21,,,,,,circle timer summary
+22,,,,,,circle timer description
+23,,,,,,3 Minutes
+24,,,,,,4 Minutes
+25,,,,,,5 Minutes
+26,,,,,,6 Minutes
+27,,,,,,7 Minutes
+28,,,,,,1 Minute

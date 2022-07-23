@@ -90,7 +90,19 @@ function Mod_OnInit()
 	_mod.circle = {
 		pos = World_Pos(0, 0, 0),
 		radius = World_GetWidth() / 2
-	},
+	}
+	
+	local circle_time_options = {
+		[_mod.options.circle.timer.enum_items.one_minute] = 60,
+		[_mod.options.circle.timer.enum_items.three_minutes] = 60 * 3,
+		[_mod.options.circle.timer.enum_items.four_minutes] = 60 * 4,
+		[_mod.options.circle.timer.enum_items.five_minutes] = 60 * 5,
+		[_mod.options.circle.timer.enum_items.six_minutes] = 60 * 6,
+		[_mod.options.circle.timer.enum_items.seven_minutes] = 60 * 7,
+	}
+	
+	_mod.circle_shrink_time_s = circle_time_options[_mod.options.circle.timer.enum_value]
+		
 	Rule_AddOneShot(Mod_SpawnCircle, 5)
 end
 
