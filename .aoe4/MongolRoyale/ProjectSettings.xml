@@ -8,10 +8,9 @@
 				<d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
 					<d2p1:Value>
-						<d2p1:string>assets\locdb\MongolRoyale.locdb</d2p1:string>
-						<d2p1:string>assets\locdb\MongolRoyale_en.csv</d2p1:string>
+						<d2p1:string>assets\locdb</d2p1:string>
 						<d2p1:string>assets\scar\winconditions</d2p1:string>
-						<d2p1:string>assets\scar\MongolRoyale.scar.bak</d2p1:string>
+						<d2p1:string>assets\scar\MongolRoyale.scar</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
@@ -24,11 +23,11 @@
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\MongolRoyale.rdo</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\locdb\MongolRoyale.locdb</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.rdo</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.png.png</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.png</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\_default.burnproj</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\1x1_dirtpatch_a_age_01.bin</d3p1:string>

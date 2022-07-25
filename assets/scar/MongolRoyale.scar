@@ -88,8 +88,19 @@ end
 
 -- Called on match initialization before handing control to the player
 function Mod_OnInit()
-	_mod.circle.pos = World_Pos(0, 0, 0)
 	_mod.circle.radius = World_GetWidth() / 2
+	
+	local full_random_x = World_GetRand(_mod.circle.radius * -1, _mod.circle.radius)
+	local full_random_z = World_GetRand(_mod.circle.radius * -1, _mod.circle.radius)
+	
+	local circle_location_options = {
+		[_mod.options.circle.location.enum_items.fixed_central] = World_Pos(0, 0, 0),
+		[_mod.options.circle.location.enum_items.random_but_central] = World_Pos(0, 0, 0),
+		[_mod.options.circle.location.enum_items.full_random] = World_Pos(full_random_x, 0, full_random_z)
+	}
+	
+	_mod.circle.pos = circle_location_options[_mod.options.circle.location.enum_value]
+	
 	
 	local circle_time_options = {
 		[_mod.options.circle.timer.enum_items.one_minute] = 60,
@@ -173,10 +184,13 @@ function Mod_KillEntitiesOutsideOfCircle()
 		end
 	end
 	
-	local circle_deviation = 0.25 * _mod.circle.radius
-	local x_deviation = World_GetRand(circle_deviation * -1, circle_deviation)
-	local z_deviation = World_GetRand(circle_deviation * -1, circle_deviation)
-	_mod.circle.pos = World_Pos(_mod.circle.pos.x + x_deviation, 0, _mod.circle.pos.z + z_deviation)
+	if _mod.options.circle.location.enum_value ~= _mod.options.circle.location.enum_items.fixed_central then
+		local circle_deviation = 0.25 * _mod.circle.radius
+		local x_deviation = World_GetRand(circle_deviation * -1, circle_deviation)
+		local z_deviation = World_GetRand(circle_deviation * -1, circle_deviation)
+		_mod.circle.pos = World_Pos(_mod.circle.pos.x + x_deviation, 0, _mod.circle.pos.z + z_deviation)
+	end
+	
 	_mod.circle.radius = _mod.circle.radius * 0.75
 	_mod.circle.shrink_time = _mod.circle.shrink_time + _mod.circle.shrink_time_modifier
 	

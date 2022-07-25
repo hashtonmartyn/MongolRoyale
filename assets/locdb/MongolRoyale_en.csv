@@ -36,3 +36,12 @@
 35,,,,,,Five minute circle countdown timer
 36,,,,,,Six minute circle countdown timer
 37,,,,,,One minute circle countdown timer
+38,,,,,,Circle Location
+39,,,,,,Controls where the circle is spawned on the map
+40,,,,,,Random but Central
+41,,,,,,the circle's central point will start at the centre of the map and shift slightly as the game goes on
+42,,,,,,Fixed Central
+43,,,,,,the circle's central point will always be the centre of the map
+44,,,,,,Full Random
+45,,,,,,the circle's central point can be anywhere on the map
+46,,,,,,Ordered by least random to most random
