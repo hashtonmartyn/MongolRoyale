@@ -47,8 +47,6 @@ import("winconditions/CountdownUI.scar")
 -- Global data table that can be referenced in script functions (e.g. _mod.module = "Mod")
 _mod = {
 	module = "Mod",
-	objective_title = "$7488deca100c4f73b764d1a8d2d2e06d:11",
-	objective_requirement = 5,
 	options = {},
 	icons = {
 		objective = "icons\\races\\common\\victory_conditions\\victory_condition_conquest",
@@ -85,7 +83,6 @@ end
 
 -- Called on match initialization before handing control to the player
 function Mod_OnInit()
-	CountdownUI_Create()
 	_mod.circle.radius = World_GetWidth() / 2
 	
 	local full_random_x = World_GetRand(_mod.circle.radius * -1, _mod.circle.radius)
@@ -114,14 +111,25 @@ function Mod_OnInit()
 	end
 	
 	_mod.circle.shrink_time = circle_time_options[_mod.options.circle.timer.enum_value]
-		
-	Rule_AddOneShot(Mod_SpawnCircle, 5)
 end
 
 -- Called after initialization is done when game is fading up from black
 function Mod_Start()
-	
+	Mod_SpawnCircle()
+	if UI_IsReplay() then
+		CountdownUI_Create()
+		Rule_AddInterval(Update_CountdownUI, 0.25)
+	end
 end
+
+
+function Update_CountdownUI()
+	if Objective_IsTimerSet(_mod.objective) then
+		local timer_seconds = Objective_GetTimerSeconds(_mod.objective)
+		Update_Time_Remaining(timer_seconds)
+	end
+end
+
 
 -- Called when Core_SetPlayerDefeated() is invoked. Signals that a player has been eliminated from play due to defeat.
 function Mod_OnPlayerDefeated(player, reason)
