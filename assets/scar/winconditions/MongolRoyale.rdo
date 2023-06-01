@@ -10,7 +10,7 @@
 			</DataObject>
 		</DataProperty>
 		<DataProperty Name="m_gameModeType" Type="String" Value=""/>
-		<DataProperty Name="m_scarWinConditionFile" Type="String" Value="MongolRoyale"/>
+		<DataProperty Name="m_scarWinConditionFile" Type="String" Value="winconditions/MongolRoyale"/>
 		<DataProperty Name="m_feAllowSelectingStartingLocations" Type="Bool" Value="true"/>
 		<DataProperty Name="m_playerUpgrades" Type="Object"/>
 		<DataProperty Name="m_feIcon" Type="String" Value=""/>

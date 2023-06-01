@@ -8,10 +8,9 @@
 				<d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 					<d2p1:Key>AssetExplorerGeneric</d2p1:Key>
 					<d2p1:Value>
-						<d2p1:string>assets\locdb\MongolRoyale_en.csv</d2p1:string>
+						<d2p1:string>assets\locdb\MongolRoyale.locdb</d2p1:string>
+						<d2p1:string>assets\scar\ObserverUI</d2p1:string>
 						<d2p1:string>assets\scar\winconditions</d2p1:string>
-						<d2p1:string>assets\scar\MongolRoyale.scar</d2p1:string>
-						<d2p1:string>assets\_default.burnproj</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
@@ -20,6 +19,125 @@
 		<d2p1:anyType xmlns:d3p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor" i:type="d3p1:ScriptProjectSettings">
 			<d3p1:BookmarkSettings />
 			<d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>48</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>98</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>94</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>108</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>145</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\MongolRoyale.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>91</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>51</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
 				<d3p1:BreakpointSettings>
 					<d3p1:Column>1</d3p1:Column>
 					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUI.scar</d3p1:FileName>
@@ -37,21 +155,157 @@
 						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
 					</d3p1:Settings>
 				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUiInitialization.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>26</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUiRuleSystem.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>8</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUiRuleSystem.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>20</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUiRuleSystem.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>32</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\ObserverUI\ObserverUiRuleSystem.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>40</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\winconditions\CountdownUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>41</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\winconditions\MongolRoyale.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>88</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\winconditions\CountdownUI.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>29</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
 			</d3p1:BreakpointSettings>
 		</d2p1:anyType>
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\MongolRoyale.rdo</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.rdo</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\locdb\MongolRoyale.locdb</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\mod.png</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\_default.burnproj</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\BloodLust\assets\mod.png</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\MongolRoyale.scar</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\mod.bin</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\archives\MongolRoyale.sga</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\MongolRoyale.rdo</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\ObserverUI\ObserverUI.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\MongolRoyale.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\CountdownUI.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\ObserverUI\xaml\ObserveNPlayers.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\ObserverUI\xaml\Observe2Players.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\ObserverUI\Settings.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\ObserverUI\ObserverUIUpdateUi.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\ObserverUI\ObserverUiRuleSystem.scar</d3p1:string>
 		</History>
 	</RecentFiles>
 </ProjectSettings>

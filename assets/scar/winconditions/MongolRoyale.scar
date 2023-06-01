@@ -38,7 +38,7 @@ Additional documentation and function references can be found online.
 import("cardinal.scar")							-- Contains sfx references, UI templates, and Civ/Age helper functions
 import("ScarUtil.scar")							-- Contains game helper functions
 import("gamemodes/standard_mode.scar")
-
+import("winconditions/CountdownUI.scar")
 
 -----------------------------------------------------------------------
 -- Data
@@ -60,16 +60,13 @@ _mod = {
 		shrink_time = 300,
 		shrink_time_modifier = 0
 	},
-	objective = {
-		Title = "$7488deca100c4f73b764d1a8d2d2e06d:14",
-		Type = ObjectiveType_Optional, 
-	},
-	sub_objective = {},
+	objective = {},
 	round_num = 0
 }
 
 -- Register the win condition (Some functions can be prepended with "Mod_" to be called automatically as part of the scripting framework)
 Core_RegisterModule(_mod.module)
+
 
 -----------------------------------------------------------------------
 -- Scripting framework 
@@ -88,6 +85,7 @@ end
 
 -- Called on match initialization before handing control to the player
 function Mod_OnInit()
+	CountdownUI_Create()
 	_mod.circle.radius = World_GetWidth() / 2
 	
 	local full_random_x = World_GetRand(_mod.circle.radius * -1, _mod.circle.radius)
@@ -122,7 +120,7 @@ end
 
 -- Called after initialization is done when game is fading up from black
 function Mod_Start()
-	Mod_SetupObjective()
+	
 end
 
 -- Called when Core_SetPlayerDefeated() is invoked. Signals that a player has been eliminated from play due to defeat.
@@ -141,8 +139,7 @@ end
 
 -- This function creates the objective UI that appears in the top-left corner of each player's screen
 function Mod_SetupObjective()
-	Objective_Register(_mod.objective)
-	Objective_Start(_mod.objective, true, false)
+	
 end
 
 
@@ -153,16 +150,15 @@ function Mod_SpawnCircle()
 	end
 	
 	_mod.round_num = _mod.round_num + 1 
-	_mod.sub_objective = {
-		Title = Loc_FormatText("$7488deca100c4f73b764d1a8d2d2e06d:15", _mod.round_num),
+	_mod.objective = {
+		Title = Loc_FormatText("$7488deca100c4f73b764d1a8d2d2e06d:14", _mod.round_num),
 		Type = ObjectiveType_Optional,
-		Parent = _mod.objective,
 	}
 	
-	Objective_Register(_mod.sub_objective)
-	Objective_StartTimer(_mod.sub_objective, COUNT_DOWN, _mod.circle.shrink_time)
-	Objective_Start(_mod.sub_objective, true, false)
-	Objective_AddAreaHighlight(_mod.sub_objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
+	Objective_Register(_mod.objective)
+	Objective_StartTimer(_mod.objective, COUNT_DOWN, _mod.circle.shrink_time)
+	Objective_Start(_mod.objective, true, false)
+	Objective_AddAreaHighlight(_mod.objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
 	
 	scale = _mod.circle.radius * 2.01
 	_mod.circle.splat = Splat_Create("tools\\cursor", _mod.circle.pos, scale, scale, 0, 0, 0, 255, 1000, true, true)
@@ -171,7 +167,7 @@ function Mod_SpawnCircle()
 end
 
 function Mod_KillEntitiesOutsideOfCircle()
-	Objective_Complete(_mod.sub_objective)
+	Objective_Complete(_mod.objective)
 	for i, player in pairs(PLAYERS) do
 		player_entgroupobs = Player_GetAllEntities(player.id)
 		local has_alive_units = false

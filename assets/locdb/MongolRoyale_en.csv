@@ -12,7 +12,7 @@
 11,,,,,,Construct 5 Houses
 12,,,,,,%1AMOUNT% of each resource added
 13,,,,,,"Just like your favourite first-person-shooter battle royale, but in AOE4!\n\nUnits outside of the circle will die when the countdown hits zero. While the countdown is active you can exit the circle to gather resources, acquire relics, or capture sacred sites. Playing as the Mongols isn't required but it's definitely recommended."
-14,,,,,,Move into the circle
+14,,,,,,Move into the circle round %1ROUNDNUM%
 15,,,,,,Round %1ROUNDNUM%
 16,,,,,,Circle Options
 17,,,,,,Timer display name
