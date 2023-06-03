@@ -38,7 +38,11 @@ Additional documentation and function references can be found online.
 import("cardinal.scar")							-- Contains sfx references, UI templates, and Civ/Age helper functions
 import("ScarUtil.scar")							-- Contains game helper functions
 import("gamemodes/standard_mode.scar")
-import("winconditions/CountdownUI.scar")
+
+if UI_IsReplay then
+	import("winconditions/CountdownUI.scar")
+	import("ObserverUI/ObserverUI.scar")
+end
 
 -----------------------------------------------------------------------
 -- Data
