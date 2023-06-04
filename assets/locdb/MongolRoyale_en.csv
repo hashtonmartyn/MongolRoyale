@@ -11,7 +11,7 @@
 10,,,,,,Each player gets 500 of each resource every minute
 11,,,,,,Construct 5 Houses
 12,,,,,,%1AMOUNT% of each resource added
-13,,,,,,"Just like your favourite first-person-shooter battle royale, but in AOE4!\n\nUnits outside of the circle will die when the countdown hits zero. While the countdown is active you can exit the circle to gather resources, acquire relics, or capture sacred sites. Playing as the Mongols isn't required but it's definitely recommended."
+13,,,,,,"Just like your favourite first-person-shooter battle royale, but in AOE4! Units and buildings outside of the circle will die when the countdown hits zero. While the countdown is active you can exit the circle to gather resources, acquire relics, or capture sacred sites.\n\nPlaying as the Mongols isn't required but it's definitely recommended. To have any chance playing as a civilisation other than the Mongols you should disable the Landmark, Sacred Site, and Wonder win conditions so the game will default to the Annihilation win condition. In the Annihilation win condition a player is eliminated when they have no units remaining and either no buildings or insufficient resources with which to produce any more units. The last remaining player/team wins."
 14,,,,,,Move into the circle round %1ROUNDNUM%
 15,,,,,,Round %1ROUNDNUM%
 16,,,,,,Circle Options
@@ -46,6 +46,12 @@
 45,,,,,,the circle's central point can be anywhere on the map
 46,,,,,,Ordered by least random to most random
 47,,,,,,Win Conditions
-48,,,,,,Conquest
-49,,,,,,Religious
+48,,,,,,Landmarks
+49,,,,,,Sacred
 50,,,,,,Wonder
+51,,,,,,Landmarks
+52,,,,,,Destroy all enemy landmarks
+53,,,,,,Sacred
+54,,,,,,Control all the Sacred Sites
+55,,,,,,Wonder
+56,,,,,,Build and defend a Wonder
