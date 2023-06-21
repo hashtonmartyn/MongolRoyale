@@ -63,6 +63,7 @@ _mod = {
 		shrink_time_modifier = 0
 	},
 	round_num = 0,
+	objective = nil
 }
 
 -- Register the win condition (Some functions can be prepended with "Mod_" to be called automatically as part of the scripting framework)
@@ -114,10 +115,6 @@ function Mod_OnInit()
 	end
 	
 	_mod.circle.shrink_time = circle_time_options[_mod.options.circle.timer.enum_value]
-	
-	for _, player in pairs(PLAYERS) do
-		player._mod = {objective = {}}
-	end
 end
 
 -- Called after initialization is done when game is fading up from black
@@ -130,24 +127,12 @@ function Mod_Start()
 end
 
 
-function GetFirstAlivePlayer()
-	for _, player in pairs(PLAYERS) do
-		if Player_IsAlive(player.id) then
-			return player
-		end
-	end
-	
-	return nil
-end
-
-
 function Update_CountdownUI()
 	timer_seconds = 0
-	player = GetFirstAlivePlayer()
 	
-	if player ~= nil then
-		if Objective_IsTimerSet(player._mod.objective) then
-			timer_seconds = Objective_GetTimerSeconds(player._mod.objective)
+	if _mod.objective ~= nil then
+		if Objective_IsTimerSet(_mod.objective) then
+			timer_seconds = Objective_GetTimerSeconds(_mod.objective)
 		end
 	end
 	
@@ -182,37 +167,57 @@ function StartRound()
 	
 	_mod.round_num = _mod.round_num + 1 
 	
-	StartObjectives()
+	StartObjective()
 	
 	scale = _mod.circle.radius * 2.01
-	_mod.circle.splat = Splat_Create("tools\\cursor", _mod.circle.pos, scale, scale, 0, 0, 0, 255, 1000, true, true)
+	_mod.circle.splat = Splat_Create("tools\\cursor", _mod.circle.pos, scale, scale, 0, 0, 0, 255, 1000, false, false)
 	
 	Rule_AddOneShot(EndRound, _mod.circle.shrink_time)
 end
 
-function StartObjectives()
-	for _, player in pairs(PLAYERS) do
-		player._mod.objective = {
-			Title = Loc_FormatText("$7488deca100c4f73b764d1a8d2d2e06d:14", _mod.round_num),
-			Type = ObjectiveType_Optional,
-		}
-		
-		Objective_Register(player._mod.objective, player.id)
-		Objective_StartTimer(player._mod.objective, COUNT_DOWN, _mod.circle.shrink_time)
-		Objective_Start(player._mod.objective, true, false)
-		Objective_AddAreaHighlight(player._mod.objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
-	end
+
+function StartObjective()
+	local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
+	_mod.objective = {
+		Title = Loc_FormatText("$7488deca100c4f73b764d1a8d2d2e06d:14", _mod.round_num),
+		Type = ObjectiveType_Optional,
+	}
+	
+	Objective_Register(_mod.objective, player.id)
+	Objective_StartTimer(_mod.objective, COUNT_DOWN, _mod.circle.shrink_time)
+	Objective_Start(_mod.objective, true, false)
+	Objective_AddAreaHighlight(_mod.objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
 end
 
 function EndRound()
+	Objective_Complete(_mod.objective)
+	
 	for _, player in pairs(PLAYERS) do
-		Objective_Complete(player._mod.objective)
-		player_entgroupobs = Player_GetAllEntities(player.id)
-		local has_alive_units = false
+		local player_entgroupobs = Player_GetAllEntities(player.id)
+		local has_alive_entities = false
+		local zero_health_entities = {}
 		
 		for i=1,EGroup_Count(player_entgroupobs),1 do
 			local entity = EGroup_GetEntityAt(player_entgroupobs, i)
 			if Util_GetDistance(Entity_GetPosition(entity), _mod.circle.pos) > _mod.circle.radius then
+				Entity_Kill(entity)
+			else
+				local entity_health = Entity_GetHealth(entity)
+				if entity_health == 0 then
+					--[[ 
+						Mongols have a "dummy tc" thing which ends up here. It can be the only thing they have where Entity_IsAlive is true
+						and it keeps loss conditions from triggering so sadly we need to handle it manually. Not sure if there are other
+						conditions where this would be required. Very not ideal but such is life :/
+					]]
+					table.insert(zero_health_entities, entity)
+				else
+					has_alive_entities = true
+				end
+			end
+		end
+		
+		if not has_alive_entities then
+			for _, entity in pairs(zero_health_entities) do
 				Entity_Kill(entity)
 			end
 		end
