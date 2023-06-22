@@ -178,16 +178,18 @@ end
 
 function StartObjective()
 	local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
+
 	_mod.objective = {
 		Title = Loc_FormatText("$7488deca100c4f73b764d1a8d2d2e06d:14", _mod.round_num),
 		Type = ObjectiveType_Optional,
 	}
 	
 	Objective_Register(_mod.objective, player.id)
-	Objective_StartTimer(_mod.objective, COUNT_DOWN, _mod.circle.shrink_time)
 	Objective_Start(_mod.objective, true, false)
+	Objective_StartTimer(_mod.objective, COUNT_DOWN, _mod.circle.shrink_time)
 	Objective_AddAreaHighlight(_mod.objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
 end
+
 
 function EndRound()
 	Objective_Complete(_mod.objective)
