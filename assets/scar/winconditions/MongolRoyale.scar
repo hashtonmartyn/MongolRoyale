@@ -63,7 +63,7 @@ _mod = {
 		shrink_time_modifier = 0
 	},
 	round_num = 0,
-	objective = nil
+	objectives = {}
 }
 
 -- Register the win condition (Some functions can be prepended with "Mod_" to be called automatically as part of the scripting framework)
@@ -126,13 +126,21 @@ function Mod_Start()
 	end
 end
 
+function GetCurrentObjective()
+	if _mod.objectives[_mod.round_num] ~= nil then
+		return _mod.objectives[_mod.round_num]
+	end
+	
+	return nil
+end
 
 function Update_CountdownUI()
-	timer_seconds = 0
+	local timer_seconds = 0
+	local objective = GetCurrentObjective()
 	
-	if _mod.objective ~= nil then
-		if Objective_IsTimerSet(_mod.objective) then
-			timer_seconds = Objective_GetTimerSeconds(_mod.objective)
+	if objective ~= nil then
+		if Objective_IsTimerSet(objective) then
+			timer_seconds = Objective_GetTimerSeconds(objective)
 		end
 	end
 	
@@ -179,20 +187,23 @@ end
 function StartObjective()
 	local player = Core_GetPlayersTableEntry(Game_GetLocalPlayer())
 
-	_mod.objective = {
+	local objective = {
 		Title = Loc_FormatText("$7488deca100c4f73b764d1a8d2d2e06d:14", _mod.round_num),
 		Type = ObjectiveType_Optional,
 	}
 	
-	Objective_Register(_mod.objective, player.id)
-	Objective_Start(_mod.objective, true, false)
-	Objective_StartTimer(_mod.objective, COUNT_DOWN, _mod.circle.shrink_time)
-	Objective_AddAreaHighlight(_mod.objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
+	Objective_Register(objective, player.id)
+	Objective_Start(objective, true, false)
+	Objective_StartTimer(objective, COUNT_DOWN, _mod.circle.shrink_time)
+	Objective_AddAreaHighlight(objective, _mod.circle.pos, AT_CIRCLE, _mod.circle.radius / World_GetWidth() * 13.5, { 0, 0, 255 }, 0)
+	
+	_mod.objectives[_mod.round_num] = objective
 end
 
 
 function EndRound()
-	Objective_Complete(_mod.objective)
+	local objective = GetCurrentObjective()
+	Objective_Complete(objective)
 	
 	for _, player in pairs(PLAYERS) do
 		local player_entgroupobs = Player_GetAllEntities(player.id)

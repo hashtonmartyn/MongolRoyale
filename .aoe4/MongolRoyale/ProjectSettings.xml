@@ -10,7 +10,7 @@
 					<d2p1:Value>
 						<d2p1:string>assets\locdb</d2p1:string>
 						<d2p1:string>assets\scar\ObserverUI\UiDataContext</d2p1:string>
-						<d2p1:string>assets\scar\winconditions</d2p1:string>
+						<d2p1:string>assets\scar\winconditions\MongolRoyale.scar</d2p1:string>
 					</d2p1:Value>
 				</d2p1:KeyValueOfstringArrayOfstringty7Ep6D1>
 			</d3p1:ExpandedPaths>
@@ -189,21 +189,55 @@
 						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
 					</d3p1:Settings>
 				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\winconditions\MongolRoyale.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>190</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
+				<d3p1:BreakpointSettings>
+					<d3p1:Column>1</d3p1:Column>
+					<d3p1:FileName>FileName|Script|assets\scar\winconditions\MongolRoyale.scar</d3p1:FileName>
+					<d3p1:IsEnabled>true</d3p1:IsEnabled>
+					<d3p1:Line>206</d3p1:Line>
+					<d3p1:Settings xmlns:d6p1="http://schemas.datacontract.org/2004/07/Essence.Editor.ScriptEditor.Controls">
+						<d6p1:ConditionalExpression></d6p1:ConditionalExpression>
+						<d6p1:ConditionalExpressionEnabled>false</d6p1:ConditionalExpressionEnabled>
+						<d6p1:ConditionalExpressionOperator>IsTrue</d6p1:ConditionalExpressionOperator>
+						<d6p1:HitCount>0</d6p1:HitCount>
+						<d6p1:HitCountEnabled>false</d6p1:HitCountEnabled>
+						<d6p1:HitCountOperator>Equal</d6p1:HitCountOperator>
+						<d6p1:PrintAction></d6p1:PrintAction>
+						<d6p1:PrintActionConsequence>ContinueExecution</d6p1:PrintActionConsequence>
+						<d6p1:PrintActionEnabled>false</d6p1:PrintActionEnabled>
+					</d3p1:Settings>
+				</d3p1:BreakpointSettings>
 			</d3p1:BreakpointSettings>
 		</d2p1:anyType>
 	</PluginSettings>
 	<RecentFiles>
 		<History xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\winconditions\MongolRoyale.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\Documents\MongolRoyale\assets\scar\ObserverUI\Tracking_RelicLocations.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\gamefunctions.scar</d3p1:string>
+			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\classic_start.scar</d3p1:string>
 			<d3p1:string>C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\Data.sga</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\annihilation.scar</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\surrender.scar</d3p1:string>
 			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\objectives.scar</d3p1:string>
 			<d3p1:string>C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\UI.sga</d3p1:string>
 			<d3p1:string>C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\Attrib.sga</d3p1:string>
-			<d3p1:string>C:\Program Files\steam\steamapps\common\Age of Empires IV\cardinal\archives\ArtHigh.sga</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\text_input.png</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\modal_ability.png</d3p1:string>
-			<d3p1:string>C:\Users\hashtonmartyn\AppData\Local\Temp\cursor.lua</d3p1:string>
 		</History>
 	</RecentFiles>
 </ProjectSettings>
